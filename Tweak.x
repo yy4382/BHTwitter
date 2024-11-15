@@ -551,7 +551,7 @@ static void batchSwizzlingOnClass(Class cls, NSArray<NSString*>*origSelectors, I
 }
 %new - (void)handleUploadButton:(UIButton *)sender {
     UIImagePickerController *videoPicker = [[UIImagePickerController alloc] init];
-    videoPicker.mediaTypes = @[(NSString*)kUTTypeMovie];
+    // videoPicker.mediaTypes = @[(NSString*)kUTTypeMovie];
     videoPicker.delegate = self;
     
     [topMostController() presentViewController:videoPicker animated:YES completion:nil];
